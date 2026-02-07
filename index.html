@@ -2,6 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>For You 🌹</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Great+Vibes&display=swap" rel="stylesheet">
@@ -20,28 +21,26 @@ body {
 
 .container {
   text-align: center;
-  max-width: 650px;
+  max-width: 500px;
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  padding: 10px;
 }
 
 p {
-  font-size: 22px;
+  font-size: 20px;
   color: #4a4a4a;
   line-height: 1.6;
-  margin: 10px 0;
+  margin: 12px 0;
 }
 
 button {
-  margin-top: 20px;
-  padding: 10px 28px;
+  margin-top: 18px;
+  padding: 10px 24px;
   border: none;
   border-radius: 30px;
   background: #c4003a;
   color: white;
-  font-size: 16px;
+  font-size: 15px;
   cursor: pointer;
   transition: 0.3s;
   font-family: 'Playfair Display', serif;
@@ -49,7 +48,6 @@ button {
 
 button:hover {
   background: #8b0028;
-  transform: scale(1.05);
 }
 
 .hidden {
@@ -57,13 +55,13 @@ button:hover {
 }
 
 img {
-  width: 260px;
-  max-width: 80%;
+  width: 220px;
+  max-width: 90%;
   border-radius: 15px;
   box-shadow: 0 15px 40px rgba(0,0,0,0.15);
   animation: fadeIn 1.5s ease-out forwards;
   opacity: 0;
-  margin-top: 15px;
+  margin-top: 10px;
 }
 
 @keyframes fadeIn {
@@ -72,17 +70,17 @@ img {
   }
 }
 
-.signature {
-  margin-top: 25px;
-  font-size: 26px;
-  color: #c4003a;
-  font-family: 'Great Vibes', cursive;
+.small-text {
+  margin-top: 10px;
+  font-size: 17px;
+  color: #555;
 }
 
-.small-text {
+.signature {
   margin-top: 15px;
-  font-size: 19px;
-  color: #555;
+  font-size: 24px;
+  color: #c4003a;
+  font-family: 'Great Vibes', cursive;
 }
 
 </style>
@@ -111,13 +109,13 @@ img {
   <img src="rose-bouquet.png" alt="Bouquet of Roses">
 
   <p>
-    Shalu,<br>
+    Shalu,<br><br>
     Since it's Rose Day,<br>
-    here's a bouquet of roses for you ❤️
+    Here's a bouquet of roses for you ❤️
   </p>
 
   <p class="small-text">
-    I gotchu… even if we don’t have anyone else.<br>
+    I gotchu… even if we don’t have anyone else<br>
     Especially for those 6AM runs 😌🏃‍♀️
   </p>
 
