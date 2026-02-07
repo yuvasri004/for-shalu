@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>For You 🌹</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Great+Vibes&display=swap" rel="stylesheet">
+
+<style>
+body {
+  margin: 0;
+  min-height: 100vh;
+  padding: 20px;
+  font-family: 'Playfair Display', serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to top, #fff0f5, #ffffff);
+}
+
+.container {
+  text-align: center;
+  max-width: 650px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+p {
+  font-size: 22px;
+  color: #4a4a4a;
+  line-height: 1.6;
+  margin: 10px 0;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 28px;
+  border: none;
+  border-radius: 30px;
+  background: #c4003a;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-family: 'Playfair Display', serif;
+}
+
+button:hover {
+  background: #8b0028;
+  transform: scale(1.05);
+}
+
+.hidden {
+  display: none;
+}
+
+img {
+  width: 260px;
+  max-width: 80%;
+  border-radius: 15px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+  animation: fadeIn 1.5s ease-out forwards;
+  opacity: 0;
+  margin-top: 15px;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.signature {
+  margin-top: 25px;
+  font-size: 26px;
+  color: #c4003a;
+  font-family: 'Great Vibes', cursive;
+}
+
+.small-text {
+  margin-top: 15px;
+  font-size: 19px;
+  color: #555;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- Slide 1 -->
+<div class="container" id="slide1">
+  <p>I have something for you</p>
+  <button onclick="nextSlide(1)">Open</button>
+</div>
+
+<!-- Slide 2 -->
+<div class="container hidden" id="slide2">
+  <p>
+    Heal fast!<br>
+    Our morning runs are waiting for us 🌅🏃‍♀️
+  </p>
+  <button onclick="nextSlide(2)">Surprise 🌹</button>
+</div>
+
+<!-- Slide 3 -->
+<div class="container hidden" id="slide3">
+
+  <img src="rose-bouquet.png" alt="Bouquet of Roses">
+
+  <p>
+    Shalu,<br>
+    Since it's Rose Day,<br>
+    here's a bouquet of roses for you ❤️
+  </p>
+
+  <p class="small-text">
+    I gotchu… even if we don’t have anyone else.<br>
+    Especially for those 6AM runs 😌🏃‍♀️
+  </p>
+
+  <div class="signature">
+    – Yuva
+  </div>
+
+</div>
+
+<script>
+function nextSlide(current) {
+  document.getElementById("slide" + current).classList.add("hidden");
+  document.getElementById("slide" + (current + 1)).classList.remove("hidden");
+}
+</script>
+
+</body>
+</html>
